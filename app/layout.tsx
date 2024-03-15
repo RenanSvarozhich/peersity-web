@@ -1,12 +1,12 @@
-import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import "./globals.css";
-
-const inter = Inter({ subsets: ["latin"] });
+import type { Metadata } from "next";
+import ThemeScript from "./shared/theme";
+import Navbar from "./shared/navbar";
+import Footer from "./shared/footer";
 
 export const metadata: Metadata = {
   title: "Peersity",
-  description: "Learning resources recommendations",
+  description: "Learning resources recommendations and reviews",
 };
 
 export default function RootLayout({
@@ -15,8 +15,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
+    <html lang="en" className="h-full">
+      <body className="dark:bg-slate-900 flex flex-col h-full">
+        <Navbar />
+        {children}
+        <Footer />
+      </body>
+      <ThemeScript />
     </html>
   );
 }
