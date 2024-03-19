@@ -7,7 +7,7 @@ export default function Skills() {
         <div className="max-w-7x1 mx-auto px-4 sm:px-6 lg:px-8 pt-24 pb-10">
           <div className="mt-5 max-w-2xl text-center mx-auto">
             <h1 className="block font-bold text-gray-800 text-4xl md:text-5xl lg:text-6xl dark:text-gray-200">
-              <span className="bg-clip-text bg-gradient-to-tl from-blue-600 to-violet-600 text-transparent">Skills</span>              
+              <span className="bg-clip-text bg-gradient-to-tl from-blue-600 to-sky-600 text-transparent">Skills</span>              
             </h1>
           </div>
 
@@ -24,7 +24,7 @@ export default function Skills() {
             <div className="h-60 rounded-t-xl bg-[url('/skills/c.webp')] bg-cover bg-no-repeat bg-center">
             </div>
             <div className="p-4 md:p-6">
-              <h3 className="text-xl font-semibold text-gray-800 dark:text-gray-300 dark:hover:text-white">
+              <h3 className="text-xl font-semibold bg-clip-text bg-gradient-to-tl from-blue-600 to-sky-600 text-transparent">
                 C language
               </h3>
               <p className="mt-3 text-gray-500">
@@ -37,7 +37,7 @@ export default function Skills() {
             <div className="h-60 rounded-t-xl bg-[url('/skills/java.webp')] bg-cover bg-no-repeat bg-center">
             </div>
             <div className="p-4 md:p-6">
-              <h3 className="text-xl font-semibold text-gray-800 dark:text-gray-300 dark:hover:text-white">
+              <h3 className="text-xl font-semibold bg-clip-text bg-gradient-to-tl from-blue-600 to-sky-600 text-transparent">
                 Java language
               </h3>
               <p className="mt-3 text-gray-500">
@@ -50,7 +50,7 @@ export default function Skills() {
             <div className="h-60 rounded-t-xl bg-[url('/skills/rust.webp')] bg-cover bg-no-repeat bg-center">
             </div>
             <div className="p-4 md:p-6">
-              <h3 className="text-xl font-semibold text-gray-800 dark:text-gray-300 dark:hover:text-white">
+              <h3 className="text-xl font-semibold bg-clip-text bg-gradient-to-tl from-blue-600 to-sky-600 text-transparent">
                 Rust language
               </h3>
               <p className="mt-3 text-gray-500">
