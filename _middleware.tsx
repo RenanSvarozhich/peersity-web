@@ -1,4 +1,4 @@
-import type { NextRequest } from 'next/server'
+/*import type { NextRequest } from 'next/server'
  
 export function middleware(request: NextRequest) {
   const currentUser = request.cookies.get('currentUser')?.value
@@ -7,7 +7,7 @@ export function middleware(request: NextRequest) {
     return Response.redirect(new URL('/auth/signin', request.url))
   }
 }
-
-export const config = {
-  matcher: ['/((?!api|_next/static|_next/image|.*\\.png$).*)'],
-}
+*/
+//export const config = {
+//  matcher: ['/((?!api|_next/static|_next/image|.*\\.png$).*)'],
+//}
