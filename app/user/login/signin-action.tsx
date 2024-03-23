@@ -1,7 +1,7 @@
 'use server'
 
 import { set_cookie } from "../cookies";
-import type { NextApiResponse } from 'next';
+import { redirect } from 'next/navigation'
 
 export async function signinAction(prevState: any, formData: FormData) {
   const email = formData.get('email') as string;
@@ -10,12 +10,10 @@ export async function signinAction(prevState: any, formData: FormData) {
 
   const response = await mockFetchSignin(email, password);  
   
-  if (response.ok) {    
+  if (response.ok) {
     const { token } = await response.json();
     set_cookie('token', token);
-    return { message: token };
-    // redirect to redirectUrl
-    
+    redirect(redirectUrl);    
   } else {
     const { error } = await response.json();
     return { message: error };
