@@ -22,9 +22,7 @@ export default function Home() {
               </svg>
               Find skills
             </Link>
-          </div>
-
-          <Link href="/auth/signin">Sign In</Link>
+          </div>          
         </div>
       </div>
     </main>

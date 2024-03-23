@@ -10,6 +10,7 @@ export default function Navbar() {
             <img className="w-10 h-auto" src="/chaos-star-orange.png" alt="Peersity logo"></img>
             <span className="ml-2 text-xl font-semibold bg-clip-text bg-gradient-to-tl from-orange-500 to-yellow-500 text-transparent">Peersity</span>
           </Link>
+
           <div className="sm:hidden">
             <button type="button" className="hs-collapse-toggle size-9 flex justify-center items-center text-sm font-semibold rounded-lg border border-gray-200 text-gray-800 hover:bg-gray-100 disabled:opacity-50 disabled:pointer-events-none dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600" data-hs-collapse="#navbar-collapse-with-animation" aria-controls="navbar-collapse-with-animation" aria-label="Toggle navigation">
               <svg className="hs-collapse-open:hidden size-4" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
@@ -21,6 +22,7 @@ export default function Navbar() {
             </button>
           </div>
         </div>
+        
         <div id="navbar-collapse-with-animation" className="hs-collapse hidden overflow-hidden transition-all duration-300 basis-full grow sm:block">
           <div className="flex flex-col gap-y-4 gap-x-0 mt-5 sm:flex-row sm:items-center sm:justify-end sm:gap-y-0 sm:gap-x-7 sm:mt-0 sm:ps-7">
             <NavbarLinks />
