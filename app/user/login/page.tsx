@@ -1,14 +1,14 @@
 'use client'
  
 import { useFormState, useFormStatus } from 'react-dom'
-import { signinAction } from './signin-action'
+import { loginAction } from './login-action'
  
 const initialState = {
   message: '',
 }
  
 export default function Signin() {
-  const [state, formAction] = useFormState(signinAction, initialState)
+  const [state, formAction] = useFormState(loginAction, initialState)
  
   return (
     <>

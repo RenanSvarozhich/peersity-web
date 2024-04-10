@@ -1,6 +1,8 @@
 import Link from "next/link";
 import NavbarLinks from "./navbar-links";
 
+const ENV_NAME = process.env.ENV_NAME;
+
 export default function Navbar() {
   return (
     <header className="flex flex-wrap sm:justify-start sm:flex-nowrap z-50 w-full bg-white border-b border-gray-200 text-sm py-3 sm:py-0 dark:bg-gray-800 dark:border-gray-700">
@@ -9,6 +11,7 @@ export default function Navbar() {
           <Link className="flex justify-center items-center" href="/" aria-label="Peersity">
             <img className="w-10 h-auto" src="/chaos-star-orange.png" alt="Peersity logo"></img>
             <span className="ml-2 text-xl font-semibold bg-clip-text bg-gradient-to-tl from-orange-500 to-yellow-500 text-transparent">Peersity</span>
+            {ENV_NAME ? <span className="text-gray-400">&nbsp;{ENV_NAME}</span> : ''}
           </Link>
 
           <div className="sm:hidden">

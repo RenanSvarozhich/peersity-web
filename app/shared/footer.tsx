@@ -1,5 +1,7 @@
 import Link from "next/link";
 
+const ENV_NAME = process.env.ENV_NAME;
+
 export default function Footer() {
   return (
     <footer className="mt-auto bg-gray-800 w-full max-w-7x1 py-10 px-4 sm:px-6 lg:px-8 mx-auto">
@@ -7,6 +9,7 @@ export default function Footer() {
         <Link className="flex justify-center items-center" href="/" aria-label="Peersity">
           <img className="w-10 h-auto" src="/chaos-star-orange.png" alt="Peersity logo"></img>
           <span className="ml-2 text-xl font-semibold bg-clip-text bg-gradient-to-tl from-orange-500 to-yellow-500 text-transparent">Peersity</span>
+          {ENV_NAME ? <span className="text-gray-400">&nbsp;{ENV_NAME}</span> : ''}
         </Link>
 
         <ul className="text-center">
