@@ -7,7 +7,7 @@ export default function Home() {
         <div className="max-w-7x1 mx-auto px-4 sm:px-6 lg:px-8 pt-24 pb-10">
           <div className="mt-5 max-w-xl text-center mx-auto">
             <h1 className="block font-bold text-gray-800 text-4xl md:text-5xl lg:text-6xl dark:text-gray-200">
-            Let's <span className="bg-clip-text bg-gradient-to-tl from-blue-600 to-sky-600 text-transparent">skill up!</span> Together
+            Let&apos;s <span className="bg-clip-text bg-gradient-to-tl from-blue-600 to-sky-600 text-transparent">skill up!</span> Together
             </h1>
           </div>
 
